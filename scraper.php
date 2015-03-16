@@ -11,7 +11,8 @@ $pageurl = "http://www.hasznaltauto.hu/talalatilista/auto/T4R3HR2AD5J5QRLADR8ISK
 
  
 $html_content = scraperWiki::scrape($pageurl);
- 
+
+print_r($html_content); 
 
 $html = str_get_html($html_content);
 foreach ($html->find("div.talalati_lista") as $talalat) {  
