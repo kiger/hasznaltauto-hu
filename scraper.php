@@ -30,6 +30,7 @@ foreach ($html->find("div.talalati_lista") as $talalat) {
     $info = explode(",",$info);
     }
 
+  print_r($ar);
     scraperwiki::save(   
             array('id'),
             array(
