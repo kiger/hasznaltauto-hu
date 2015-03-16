@@ -22,7 +22,7 @@ foreach ($html->find("div.talalati_lista") as $talalat) {
     foreach ($talalat->find("div.talalati_lista_vetelar strong") as $ar) {
     $ar = str_replace("&nbsp;", " ", $ar->innertext);
     }
-    foreach ($talalat->find("p.talalati_lista_infosor") as $info) {
+    foreach ($talalat->find("div.talalati_lista_infosor") as $info) {
    print_r($info);
     $info = str_replace("&ndash;", ",", $info->innertext);
     $info = str_replace("&nbsp;", " ", $info);
@@ -36,10 +36,10 @@ foreach ($html->find("div.talalati_lista") as $talalat) {
                 'id' => $kod,
                 'type' => $el->innertext,
                 'price' => $ar,
-                'year' => $info[0],
+              /*  'year' => $info[0],
                 'benzin' => $info[1],
                 'hub' => $info[2],
-                'power' => $info[3],
+                'power' => $info[3],*/
                 'url' => $url,
 
             )
