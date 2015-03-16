@@ -23,14 +23,13 @@ foreach ($html->find("div.talalati_lista") as $talalat) {
     $ar = str_replace("&nbsp;", " ", $ar->innertext);
     }
     foreach ($talalat->find("p.talalati_lista_infosor") as $info) {
-
+   print_r($info);
     $info = str_replace("&ndash;", ",", $info->innertext);
     $info = str_replace("&nbsp;", " ", $info);
     $info = str_replace("&sup3;", "3", $info);
     $info = explode(",",$info);
     }
 
-  print_r($ar);
     scraperwiki::save(   
             array('id'),
             array(
