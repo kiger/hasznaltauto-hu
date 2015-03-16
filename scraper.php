@@ -7,7 +7,7 @@ $next_page = FALSE;
 do { 
 $kovetkezo = "";
 $page_counter++;
-$pageurl = "http://www.hasznaltauto.hu/talalatilista/auto/T4R3HR2AD5J5QRLADR8ISKLR89DZZJQA2MC42I7A89D5MO8KLDD895YRS3121OFYFIU5L1IKARI8OHF5Z9IJS79G985F4UAEUR29SY8ZIUY7LO96MASUGP3I9LA7E8LOS0L5SK2LUYDUJ3SYFJJO4ETF1O5YO/page{$page_counter}";
+$pageurl = "http://www.hasznaltauto.hu/partner/ber-car_autokereskedes-448/page{$page_counter}";
 
  
 $html_content = scraperWiki::scrape($pageurl);
