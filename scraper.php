@@ -4,7 +4,7 @@ require 'scraperwiki/simple_html_dom.php';
 $page_counter = 0;
 $next_page = FALSE;
 
-do { 
+//do { 
 $kovetkezo = "";
 $page_counter++;
 $pageurl = "http://www.hasznaltauto.hu/partner/ber-car_autokereskedes-448/page{$page_counter}";
@@ -45,9 +45,9 @@ foreach ($html->find("div.talalati_lista") as $talalat) {
             )
         );
 }
-    foreach ($html->find("div.oldalszamozas a[title=Következő]") as $kovetkezo) {
+   /* foreach ($html->find("div.oldalszamozas a[title=Következő]") as $kovetkezo) {
     print $page_counter . "\n";
-    }
+    }*/
 
-} while ($kovetkezo != "");
+//} while ($kovetkezo != "");
 ?>
